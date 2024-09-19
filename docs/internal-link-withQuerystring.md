@@ -19,5 +19,4 @@ Please do not insert the complete link as an external link e.g. https://visit.br
 ```
 1. How do I link to an internal item in Sitecore?
 2. Why is my Query string not working?
-3. How do I insert Query string?
 ```
