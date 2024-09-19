@@ -6,7 +6,7 @@ on:
       - master  # Adjust if your default branch is different
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,5 +20,8 @@ jobs:
     - name: Install Dependencies
       run: pip install mkdocs mkdocs-material
 
-    - name: Build and Deploy
+    - name: Build Site
+      run: mkdocs build
+
+    - name: Deploy to GitHub Pages
       run: mkdocs gh-deploy --force
