@@ -1,12 +1,14 @@
 # Troubleshooting: Nav card is adding a lot of empty space under itself
+
 <figure markdown>
 ![Error before fixing](/images/Error-Image.png)
 <figcaption>Lot of empty space under the Nav Card</figcaption>
 </figure>
 
-A lot of space under the Nav card can be seen. This usually happens when the link that the Nav card is pointing to doesnt have any summary to display. This can be fixed with 2 settings. 
+A lot of space under the Nav card can be seen. This usually happens when the link that the Nav card is pointing to doesnt have any summary to display. This can be fixed with 2 settings.
 
 ## Step 1: Hide Card Summary
+
 Hide Card Summary Checkbox (This will hide the card summary when checked)
 
 <figure markdown>
