@@ -1,0 +1,69 @@
+site_name: BEDA Website Docs
+site_url: https://docs.beda.systems
+nav:
+  - Home: index.md
+  - Helpers:
+    - Image resize: image.md
+    - Reset cache: reset.md
+    - Event creation helper: event-creation.md
+  - Troubleshoot guide:
+    - Unpublish Article: unpublish-article.md
+    - Broken Image: 
+        - Broken image in search results: broken-image.md
+        - Broken image in Articles: broken-image-articles.md
+    - Space under Nav card: fix-navcard-height.md
+    - Updating media items: update-media-files.md
+  - Sitecore guide:
+    - Identify pages for a specific Sitecore Form: sitecore-identify-formpage.md
+    - Insert internal link with Query string: internal-link-withQuerystring.md
+theme:
+  name: material
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - search.share
+    - search.suggest
+  palette: 
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  social:
+    - icon: fontawesome/brands/pied-piper-alt
+      link: https://reset.beda.systems
+      name: Helper functions
+  generator: false
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - markdown.extensions.extra
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+extra_javascript:
+  - "js/custom.js"
+copyright: Copyright &copy; 2023 BEDA
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      min_search_length: 2
+  - git-revision-date-localized:
+      type: date
+
+
